@@ -1,7 +1,7 @@
 use anyhow::{anyhow, Result};
 use serde_json::json;
 use std::process::Command;
-use std::env;
+//use std::env;
 
 use super::{Tool, ToolContext, ToolResult};
 

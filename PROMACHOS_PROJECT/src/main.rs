@@ -32,11 +32,11 @@ async fn run() -> Result<()> {
     let args = Args::parse();
     let mut model = args.model.unwrap_or(cfg.model);
     let ollama = Ollama::new(cfg.ollama_host);
-    let mut agent = Agent::new(ollama, model);
+    let mut agent = Agent::new(ollama.clone(), model);
     
     //for logging what the program does.
     tracing_subscriber::fmt()
-            .with_env_filter("info");
+            .with_env_filter("info")
             .init();
     tracing::info!("Agent is starting up!...");
 

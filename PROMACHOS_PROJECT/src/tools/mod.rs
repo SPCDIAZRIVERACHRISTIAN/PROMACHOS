@@ -5,6 +5,7 @@ use serde_json::json;
 
 pub mod system_info;
 pub mod browser;
+pub mod file_ops;
 
 
 #[derive(Clone)]
@@ -29,6 +30,8 @@ pub fn registry() -> Vec<Box<dyn Tool>> {
     vec![
         Box::new(system_info::SystemInfo),
         Box::new(browser::OpenUrl),
+        Box::new(file_ops::ReadFile),
+        Box::new(file_ops::PlanWrite),
     ]
 }
 

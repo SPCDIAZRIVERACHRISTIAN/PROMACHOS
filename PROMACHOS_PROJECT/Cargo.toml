@@ -4,8 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-tracing = "o.1"
-tracing-subscriber = { version: "0.3", features = ["env-filter"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 anyhow = "1"
 thiserror = "2.0.17"
 serde = { version = "1", features = ["derive"] }
@@ -19,3 +19,4 @@ regex = "1"
 whoami = "1"
 sysinfo = { version = "0.37.2", default-features = false, features = ["system", "multithread"] }
 opener = "0.8.3"
+similar = "2.7.0"

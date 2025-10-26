@@ -1,7 +1,15 @@
 [package]
-name = "PROMACHOS_PROJECT"
+name = "promachos_core"
 version = "0.1.0"
 edition = "2024"
+
+[lib]
+name = "promachos_core"
+path = "src/libs"
+
+[[bin]]
+name = "promachos_repl"
+path = "src/lib.rs"
 
 [dependencies]
 tracing = "0.1"

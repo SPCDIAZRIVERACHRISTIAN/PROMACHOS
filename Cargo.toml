@@ -1,0 +1,6 @@
+[workspace]
+members = [
+  "crates/promachos_core",
+  "apps/promachos_desktop/src-tauri",
+]
+resolver = "2"

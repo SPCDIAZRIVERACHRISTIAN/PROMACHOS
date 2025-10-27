@@ -5,5 +5,5 @@ pub mod agent;
 pub mod tools;
 
 pub use agent::Agent;
-pub use config::Congfig;
+pub use config::Config;
 pub use ollama::Ollama;

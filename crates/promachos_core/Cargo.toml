@@ -5,7 +5,7 @@ edition = "2024"
 
 [lib]
 name = "promachos_core"
-path = "src/libs"
+path = "src/libs.rs"
 
 [[bin]]
 name = "promachos_repl"
